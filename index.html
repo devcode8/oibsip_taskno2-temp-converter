@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p>Temperature Converter</p>
+    <form class="content" onsubmit="tempCalc(); return false">
+            <div class="inputs">
+                <div class="degrees box">
+                    <label>Degrees</label><br/>
+                    <input id="temp" class="input" type="number">
+                </div>
+                <p>From</p>
+                <div class="type box">
+                    <label>Type</label><br/>
+                    <select id="temp_type" class="input">
+                        <option>°Celsius</option>
+                        <option>°Fahrenheit</option>
+                        <option>Kelvin</option>
+                    </select>
+                </div>
+                <p>TO</p>
+                <div class="type box">
+                    <label>Type</label><br/>
+                    <select id="toTemp_type" class="input">
+                        <option>°Celsius</option>
+                        <option>°Fahrenheit</option>
+                        <option>Kelvin</option>
+                    </select>
+                </div>
+            </div>
+            <input class="btn" type="submit">
+    </form>
+        <span id="result"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
